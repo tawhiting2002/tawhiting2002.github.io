@@ -88,7 +88,12 @@
   document.addEventListener("DOMContentLoaded", function () {
     var container = document.getElementById("viz1765308682738");
     var url = "https://public.tableau.com/views/CausesofRockClimbingAccidents/MyRiskFactors";
-    var options = { width: "100%", height: "600px", hideTabs: true };
+    var options = {
+  width: "100%",
+  height: "900px",   
+  hideTabs: true,
+  hideToolbar: false
+};
     new tableau.Viz(container, url, options);
   });
 </script>
@@ -100,3 +105,4 @@
 
 </body>
 </html>
+

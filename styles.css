@@ -1,132 +1,102 @@
-body {
-  background-color: #ccf7e6;
-  font-family: Arial, sans-serif;
-  color: #222;
-  padding: 20px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Scratch Page</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
 
-h1 {
-  color: #003366;
-  text-align: center;
-}
+<h1 id="top">My Favorite Hobby: Rock Climbing</h1>
 
-h2 {
-  color: darkgreen;
-  text-align: center;
-}
+<div class="box">
+  <h2>Why I Like Climbing</h2>
+  <p>
+    Climbing keeps me active and mentally focused. I prefer activities that are high in adrenaline and risk.
+    Climbing is a good one because it requires a certain level of perfection to not die.
+  </p>
+</div>
 
-.box {
-  background-color: white;
-  border: 2px solid #ccc;
-  padding: 20px;
-  margin-bottom: 20px;
-}
+<div class="box">
+  <h2>Types of Climbing</h2>
+  <ol>
+    <li>Indoor
+      <ul>
+        <li>Bouldering</li>
+        <li>Top Rope</li>
+      </ul>
+    </li>
+    <li>Outdoor
+      <ul>
+        <li>Sport</li>
+        <li>Trad</li>
+      </ul>
+    </li>
+  </ol>
+</div>
 
+<div class="box">
+  <h2>My Climbing Spots</h2>
 
-.image-section {
-  display: flex;
-  justify-content: space-evenly; 
-  align-items: flex-start;
-  gap: 30px;
-  margin-top: 20px;
-  width: 100%;
-}
+  <div class="image-section">
 
-.image-card {
-  text-align: center;
-  width: 250px;
-}
+    <div class="image-card">
+      <p>St George, UT</p>
+      <p>Prophecy Wall</p>
+      <p>Gordian Knot | 5.10d</p>
+      <img src="Gordian Knot.jpeg" alt="Gordian Knot">
+    </div>
 
-.image-card p {
-  margin: 4px 0;
-  font-weight: bold;
-  line-height: 1.2;
-}
+    <div class="image-card">
+      <p>Provo, UT</p>
+      <p>Rock Canyon</p>
+      <p>Squawstruck | 5.11b</p>
+      <img src="Squawstruck.JPG" alt="Squawstruck">
+    </div>
 
+    <div class="image-card">
+      <p>American Fork, UT</p>
+      <p>Hard Rock</p>
+      <p>Stoic Calculus | 5.10c</p>
+      <img src="Stoic Calculus.jpg" alt="Stoic Calculus">
+    </div>
 
-.image-card img {
-  width: 100%;
-  height: 300px;   
-  object-fit: cover;   
-  border-radius: 6px;
-  display: block;
-}
-body {
-  background-color: #ccf7e6;
-  font-family: Arial, sans-serif;
-  color: #222;
-  padding: 20px;
-}
+  </div>
+</div>
 
-h1 {
-  color: #003366;
-  text-align: center;
-}
+<div class="box">
+  <h2>My Climbing Video</h2>
 
-h2 {
-  color: darkgreen;
-  text-align: center;
-}
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/IyNLtHGXucA"
+    title="YouTube video player"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
 
-.box {
-  background-color: white;
-  border: 2px solid #ccc;
-  padding: 20px;
-  margin-bottom: 20px;
-}
+  <p>This is a video of me and my buddy climbing taken by drone.</p>
+</div>
 
+<div class="box">
+  <h2>Causes of Rock Climbing Accidents</h2>
+  <div id="viz1765308682738"></div>
+</div>
 
-.image-section {
-  display: flex;
-  justify-content: space-evenly;  
-  align-items: flex-start;
-  gap: 30px;
-  margin-top: 20px;
-  width: 100%;
-}
+<script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var container = document.getElementById("viz1765308682738");
+    var url = "https://public.tableau.com/views/CausesofRockClimbingAccidents/MyRiskFactors";
+    var options = { width: "100%", height: "600px", hideTabs: true };
+    new tableau.Viz(container, url, options);
+  });
+</script>
 
-.image-card {
-  text-align: center;
-  width: 250px;
-}
+<a href="#top">Back to Top</a>
+<br><br>
+<a href="../index.html">Back to Professional Site</a> |
+<a href="app.html">Go to My Web App</a>
 
-.image-card p {
-  margin: 4px 0;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-
-
-.image-card img {
-  width: 100%;
-  height: 300px;     
-  object-fit: cover;   
-  border-radius: 6px;
-  display: block;
-}
-
-
-.tableauPlaceholder object {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
-
-.box {
-  overflow: visible;
-}
-
-.tableau-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  overflow: visible;
-}
-
-.tableauPlaceholder {
-  width: 100%;
-  max-width: 1100px;
-}
-
+</body>
+</html>

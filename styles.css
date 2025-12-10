@@ -108,3 +108,23 @@ h2 {
   border-radius: 6px;
   display: block;
 }
+
+/* Center the Tableau container */
+.tableauPlaceholder {
+  display: flex !important;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Make the Tableau object fill its actual size */
+.tableauPlaceholder object {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Expand the .box so it doesn’t restrict Tableau’s size */
+.box {
+  overflow: visible;
+}
